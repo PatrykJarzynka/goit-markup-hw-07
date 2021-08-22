@@ -86,12 +86,8 @@
 .modal-input-wrapper{
     position: relative;
     width:100%;
-    }
 
-
-//reguła dla inputa //
-
-.modal-input-wrapper__input{
+    &__input{
     width:100%;
     padding-top:11px;
     padding-bottom:11px;
@@ -102,16 +98,14 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus{
-    outline:none;
-    border-color: var(--secondary-color);
+        &:focus{
+        outline:none;
+        border-color: var(--secondary-color);
+        }
+
     }
 
-}
-
-// reguła dla ikony //
-
-.modal-input-wrapper__icon{
+    &__icon{
     position: absolute;
     top: 14px;
     left: 15px;
@@ -122,7 +116,10 @@
         .modal-input-wrapper__input:focus + &{
         fill:var(--secondary-color);
         }
+    }
+
 }
+
 
 // reguła dla opisu inputa //
 
